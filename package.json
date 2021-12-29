@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite frontend",
+    "build": "vite build frontend",
     "preview": "vite preview",
     "startDev": "set NODE_ENV=dev&& nodemon server/index.js",
     "startProd": "set NODE_ENV=prod&& node server/index.js"
