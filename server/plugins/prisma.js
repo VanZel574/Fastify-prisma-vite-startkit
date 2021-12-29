@@ -1,6 +1,5 @@
-import fp from 'fastify-plugin';
-import pkg from '@prisma/client';
-const { PrismaClient } = pkg;
+const fp = require('fastify-plugin')
+const { PrismaClient } = require('@prisma/client')
 
 
 const prismaPlugin = fp(async (server, options) => {
@@ -12,4 +11,4 @@ const prismaPlugin = fp(async (server, options) => {
         await server.prisma.$disconnect()
     })
 })
-export default prismaPlugin
+module.exports = prismaPlugin
